@@ -38,6 +38,6 @@ for _ in range(10):
     server1.add_new_data({"name": "Daniel", "text": "My first todo!", "status": "open",
                           "tags": ["python", "coding"], "date": datetime.datetime.now()})
 
-# print(server1.read_data('63f216ea69926ba59f332323'))
+# print(server1.read_data('6.....323'))
 # print(server1.find_docs_by_name("Daniel"))
-# server1.remove_data('63f216ea69926ba59f332323')
+# server1.remove_data('63f216.......23')
