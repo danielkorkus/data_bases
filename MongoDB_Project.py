@@ -6,7 +6,8 @@ user_name = str(input("insert your user_name: "))
 password = str(input("insert your cluster password: "))
 
 cls = f"mongodb+srv://{user_name}:{password}@main-cluster.vxmilan.mongodb.net/test_db?retryWrites=true&w" \
-          "=majority"
+      "=majority"
+
 
 class DbServer:
     def __init__(self, cluster: str):
@@ -32,13 +33,11 @@ class DbServer:
 
 server1 = DbServer(cls)
 
-#inserting 10 items
+# inserting 10 items
 for _ in range(10):
     server1.add_new_data({"name": "Daniel", "text": "My first todo!", "status": "open",
-                           "tags": ["python", "coding"], "date": datetime.datetime.now()})
+                          "tags": ["python", "coding"], "date": datetime.datetime.now()})
 
 # print(server1.read_data('63f216ea69926ba59f332323'))
 # print(server1.find_docs_by_name("Daniel"))
 # server1.remove_data('63f216ea69926ba59f332323')
-
-
